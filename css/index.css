@@ -1,0 +1,137 @@
+body{ 
+
+    margin: 0;
+    padding: 0;
+
+    font-family: monospace;
+
+    background-image: linear-gradient(90deg,rgb(52, 86, 70),rgb(73, 157, 116),rgb(52, 86, 70));
+
+}
+
+.container{
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 10px auto;
+}
+
+h1 {
+  
+    font-size: 30px;
+    color: aliceblue  ;
+}
+/* Style Time Container */
+
+.time{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+
+}
+
+.time  .time-wrapper:nth-child(4){
+    width: 300px;
+    box-sizing: border-box;
+    padding: 0 5px;
+}
+
+.text{
+    font-size: 12px;
+    position: absolute;
+
+    top: 10px;
+    left:15px;
+    
+}
+.digits{
+    font-size: 160px;
+}
+
+
+.time-wrapper{
+    background: rgba(#a8ba9a);
+    
+    display: flex;
+    flex-direction: column;
+    
+    
+    margin-top:50px;
+    position: relative;
+    
+    border-radius:25px;
+    box-shadow: 2px 2px 4px rgba(9, 51, 30, 0.519);
+    
+    color:aliceblue;
+   
+    
+
+}
+
+/* Style of controls  */
+
+.controls{
+  margin-top: 100px;
+  padding:10px;
+  border: 0px solid rgb(255, 255, 255);
+  border-radius:  45px;
+
+  background-color: rgba(187, 199, 191, 0.489);
+  
+}
+
+.btn + .btn {
+
+    margin-left: 20px;
+
+}
+
+.btn {
+
+    border: none;
+    padding: 23px 30px;
+    background-color: rgba(0, 255, 255, 0);
+}
+
+#start{
+    background-image: url(../image/start.svg);
+    background-size: 45px;
+    background-repeat: no-repeat;
+    background-position:center;
+
+}
+#start:hover,#start:focus{
+    background-image: url(../image/start-1.svg) ;
+    background-size: 45px;
+    cursor: pointer;
+   
+}
+
+#stop{
+   background-image: url(../image/stop.svg);
+    background-size: 45px;
+    background-repeat: no-repeat;
+    background-position:center;  
+}
+#stop:hover,#stop:focus{
+    background-image: url(../image/stop-1.svg);
+    background-size: 45px;
+    cursor: pointer;
+}
+
+#reset{
+    background-image: url(../image/reset.svg);
+    background-size: 45px;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+#reset:hover{
+    background-image: url(../image/Reset-1.svg);
+    background-size: 45px;
+    cursor: pointer;
+    
+}
+
